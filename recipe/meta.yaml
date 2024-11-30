@@ -1,4 +1,4 @@
-{% set version = "4.0.3" %}
+{% set version = "4.1.0" %}
 
 package:
   name: human-dynamics-estimation-split
@@ -9,7 +9,7 @@ source:
     sha256: b81395871dce5201d95b111fb197e911fe2670d1286905cded7b6cdd46ccbd95
 
 build:
-  number: 1
+  number: 0
 
 outputs:
   - name: libhuman-dynamics-estimation
