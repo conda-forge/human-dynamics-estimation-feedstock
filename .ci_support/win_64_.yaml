@@ -11,7 +11,7 @@ cxx_compiler:
 idyntree:
 - '13'
 libmatio_cpp:
-- 0.2.5
+- 0.2.6
 libosqp:
 - 0.6.3
 libyarp:
