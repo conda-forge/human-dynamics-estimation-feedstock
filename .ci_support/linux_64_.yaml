@@ -21,7 +21,7 @@ docker_image:
 idyntree:
 - '13'
 libmatio_cpp:
-- 0.2.6
+- 0.3.0
 libosqp:
 - 0.6.3
 libyarp:
