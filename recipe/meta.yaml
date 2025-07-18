@@ -1,4 +1,4 @@
-{% set version = "4.2.0" %}
+{% set version = "4.2.1" %}
 
 package:
   name: human-dynamics-estimation-split
@@ -6,10 +6,10 @@ package:
 
 source:
   - url: https://github.com/robotology/human-dynamics-estimation/archive/refs/tags/v{{ version }}.tar.gz
-    sha256: c303ebfcb7a74a36c0e2eef0e412a7956eeab25e4816ca2cf7fc28be4f711b0e
+    sha256: 62ab0e1d343cf141d05d03cb391e148a1d52a9269ac4c27a2b29fec650cba918
 
 build:
-  number: 6
+  number: 0
 
 outputs:
   - name: libhuman-dynamics-estimation
