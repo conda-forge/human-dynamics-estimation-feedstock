@@ -9,7 +9,7 @@ source:
     sha256: 62ab0e1d343cf141d05d03cb391e148a1d52a9269ac4c27a2b29fec650cba918
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: libhuman-dynamics-estimation
