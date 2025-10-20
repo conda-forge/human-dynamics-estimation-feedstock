@@ -102,6 +102,8 @@ outputs:
   - package:
       name: human-dynamics-estimation
     requirements:
+      run_exports:
+        - ${{ pin_subpackage('libhuman-dynamics-estimation', upper_bound='x.x.x') }}
       run:
         - ${{ pin_subpackage('libhuman-dynamics-estimation', exact=True) }}
         - ${{ pin_subpackage('human-dynamics-estimation-python', upper_bound='x.x.x') }}
