@@ -1,7 +1,7 @@
 context:
   version: "4.2.2"
 
-package:
+recipe:
   name: human-dynamics-estimation-split
   version: ${{ version }}
 
