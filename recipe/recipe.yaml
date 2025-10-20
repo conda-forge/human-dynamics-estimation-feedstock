@@ -46,7 +46,7 @@ outputs:
       run_exports:
         - ${{ pin_subpackage('libhuman-dynamics-estimation', upper_bound='x.x.x') }}
     tests:
-      - commands:
+      - script:
           - if: unix
             then: test -f ${PREFIX}/lib/libHumanStateMsg${SHLIB_EXT}
           - if: win
@@ -108,7 +108,7 @@ outputs:
         - ${{ pin_subpackage('libhuman-dynamics-estimation', exact=True) }}
         - ${{ pin_subpackage('human-dynamics-estimation-python', upper_bound='x.x.x') }}
     tests:
-      - commands:
+      - script:
           - if: unix
             then: test -f ${PREFIX}/lib/libHumanStateMsg${SHLIB_EXT}
           - if: win
