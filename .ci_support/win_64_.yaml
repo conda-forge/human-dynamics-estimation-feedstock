@@ -9,13 +9,15 @@ channel_targets:
 cxx_compiler:
 - vs2022
 idyntree:
-- '13'
+- '14'
 libmatio_cpp:
 - 0.3.0
 libosqp:
 - 1.0.0
 libyarp:
 - 3.12.1
+osqp_eigen:
+- '0.11'
 pin_run_as_build:
   python:
     min_pin: x.x

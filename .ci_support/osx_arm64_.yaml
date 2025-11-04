@@ -19,7 +19,7 @@ cxx_compiler:
 cxx_compiler_version:
 - '19'
 idyntree:
-- '13'
+- '14'
 libmatio_cpp:
 - 0.3.0
 libosqp:
@@ -28,6 +28,8 @@ libyarp:
 - 3.12.1
 macos_machine:
 - arm64-apple-darwin20.0.0
+osqp_eigen:
+- '0.11'
 pin_run_as_build:
   python:
     min_pin: x.x
