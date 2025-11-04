@@ -10,7 +10,7 @@ source:
     sha256: 1e3336689492f1ade1c8224745be9c861687218d6c9e03dc81a0bf0f6ad4e59d
 
 build:
-  number: 1
+  number: 2
 
 outputs:
   - package:
@@ -50,9 +50,9 @@ outputs:
           - if: unix
             then: test -f ${PREFIX}/lib/libHumanStateMsg${SHLIB_EXT}
           - if: win
-            then: if not exist %LIBRARY_LIB%\\HumanStateMsg.lib exit 1
-          - if: win
-            then: if not exist %LIBRARY_BIN%\\HumanStateMsg.dll exit 1
+            then:
+              - if not exist %LIBRARY_LIB%\\HumanStateMsg.lib exit 1
+              - if not exist %LIBRARY_BIN%\\HumanStateMsg.dll exit 1
           - cmake-package-check IWear --targets IWear::IWear
           - cmake-package-check WearableData --targets WearableData::WearableData
           - cmake-package-check WearableActuators --targets WearableActuators::WearableActuators
@@ -112,9 +112,9 @@ outputs:
           - if: unix
             then: test -f ${PREFIX}/lib/libHumanStateMsg${SHLIB_EXT}
           - if: win
-            then: if not exist %LIBRARY_LIB%\\HumanStateMsg.lib exit 1
-          - if: win
-            then: if not exist %LIBRARY_BIN%\\HumanStateMsg.dll exit 1
+            then:
+              - if not exist %LIBRARY_LIB%\\HumanStateMsg.lib exit 1
+              - if not exist %LIBRARY_BIN%\\HumanStateMsg.dll exit 1
           - cmake-package-check IWear --targets IWear::IWear
           - cmake-package-check WearableData --targets WearableData::WearableData
           - cmake-package-check WearableActuators --targets WearableActuators::WearableActuators
