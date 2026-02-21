@@ -10,7 +10,7 @@ source:
     sha256: 1e3336689492f1ade1c8224745be9c861687218d6c9e03dc81a0bf0f6ad4e59d
 
 build:
-  number: 5
+  number: 6
 
 outputs:
   - package:
@@ -43,6 +43,7 @@ outputs:
         - librobometry
         - libmatio-cpp
         - eigen
+        - eigen-abi-devel
       run_exports:
         - ${{ pin_subpackage('libhuman-dynamics-estimation', upper_bound='x.x.x') }}
     tests:
@@ -90,6 +91,7 @@ outputs:
         - libyarp
         - pybind11
         - pybind11-abi
+        - eigen-abi-devel
       run:
         - ${{ pin_subpackage('libhuman-dynamics-estimation', exact=True) }}
         - python
