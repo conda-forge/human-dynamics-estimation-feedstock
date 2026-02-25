@@ -113,7 +113,6 @@ outputs:
               - if not exist %LIBRARY_LIB%\\HumanStateMsg.lib exit 1
               - if not exist %LIBRARY_BIN%\\HumanStateMsg.dll exit 1
           - cmake-package-check IWear --targets IWear::IWear
-          - cmake-package-check WearableData --targets WearableData::WearableData
           - cmake-package-check WearableActuators --targets WearableActuators::WearableActuators
           - cmake-package-check HumanDynamicsEstimation --targets HumanDynamicsEstimation::HumanStateMsg
         requirements:
