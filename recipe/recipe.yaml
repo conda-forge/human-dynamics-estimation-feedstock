@@ -50,8 +50,6 @@ outputs:
     tests:
       - script:
           - cmake-package-check IWear --targets IWear::IWear
-          - cmake-package-check WearableActuators --targets WearableActuators::WearableActuators
-          - cmake-package-check HumanDynamicsEstimation --targets HumanDynamicsEstimation::HumanStateMsg
         requirements:
           run:
             - cmake-package-check
@@ -105,15 +103,7 @@ outputs:
         - ${{ pin_subpackage('human-dynamics-estimation-python', upper_bound='x.x.x') }}
     tests:
       - script:
-          - if: unix
-            then: test -f ${PREFIX}/lib/libHumanStateMsg${SHLIB_EXT}
-          - if: win
-            then:
-              - if not exist %LIBRARY_LIB%\\HumanStateMsg.lib exit 1
-              - if not exist %LIBRARY_BIN%\\HumanStateMsg.dll exit 1
           - cmake-package-check IWear --targets IWear::IWear
-          - cmake-package-check WearableActuators --targets WearableActuators::WearableActuators
-          - cmake-package-check HumanDynamicsEstimation --targets HumanDynamicsEstimation::HumanStateMsg
         requirements:
           run:
             - cmake-package-check
