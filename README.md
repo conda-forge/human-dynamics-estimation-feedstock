@@ -82,7 +82,6 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-human--dynamics--estimation-green.svg)](https://anaconda.org/conda-forge/human-dynamics-estimation) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/human-dynamics-estimation.svg)](https://anaconda.org/conda-forge/human-dynamics-estimation) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/human-dynamics-estimation.svg)](https://anaconda.org/conda-forge/human-dynamics-estimation) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/human-dynamics-estimation.svg)](https://anaconda.org/conda-forge/human-dynamics-estimation) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-human--dynamics--estimation--python-green.svg)](https://anaconda.org/conda-forge/human-dynamics-estimation-python) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/human-dynamics-estimation-python.svg)](https://anaconda.org/conda-forge/human-dynamics-estimation-python) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/human-dynamics-estimation-python.svg)](https://anaconda.org/conda-forge/human-dynamics-estimation-python) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/human-dynamics-estimation-python.svg)](https://anaconda.org/conda-forge/human-dynamics-estimation-python) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-libhuman--dynamics--estimation-green.svg)](https://anaconda.org/conda-forge/libhuman-dynamics-estimation) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/libhuman-dynamics-estimation.svg)](https://anaconda.org/conda-forge/libhuman-dynamics-estimation) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/libhuman-dynamics-estimation.svg)](https://anaconda.org/conda-forge/libhuman-dynamics-estimation) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/libhuman-dynamics-estimation.svg)](https://anaconda.org/conda-forge/libhuman-dynamics-estimation) |
 
 Installing human-dynamics-estimation
@@ -95,16 +94,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `human-dynamics-estimation, human-dynamics-estimation-python, libhuman-dynamics-estimation` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `human-dynamics-estimation, libhuman-dynamics-estimation` can be installed with `conda`:
 
 ```
-conda install human-dynamics-estimation human-dynamics-estimation-python libhuman-dynamics-estimation
+conda install human-dynamics-estimation libhuman-dynamics-estimation
 ```
 
 or with `mamba`:
 
 ```
-mamba install human-dynamics-estimation human-dynamics-estimation-python libhuman-dynamics-estimation
+mamba install human-dynamics-estimation libhuman-dynamics-estimation
 ```
 
 It is possible to list all of the versions of `human-dynamics-estimation` available on your platform with `conda`:

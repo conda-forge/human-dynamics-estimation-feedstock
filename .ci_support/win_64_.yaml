@@ -9,7 +9,7 @@ channel_targets:
 cxx_compiler:
 - vs2022
 eigen_abi_devel:
-- 3.4.0
+- 5.0.1
 idyntree:
 - '15'
 libmatio_cpp:
@@ -20,17 +20,5 @@ libyarp:
 - 3.12.2
 osqp_eigen:
 - '0.11'
-pin_run_as_build:
-  python:
-    min_pin: x.x
-    max_pin: x.x
-pybind11_abi:
-- '11'
-python:
-- 3.10.* *_cpython
-- 3.11.* *_cpython
-- 3.12.* *_cpython
-- 3.13.* *_cp313
-- 3.14.* *_cp314
 target_platform:
 - win-64
