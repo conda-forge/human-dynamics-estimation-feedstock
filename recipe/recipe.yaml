@@ -58,49 +58,12 @@ outputs:
             - cmake
 
   - package:
-      name: human-dynamics-estimation-python
-    build:
-      script:
-        - if: unix
-          then: build_py.sh
-        - if: win
-          then: bld_py.bat
-    requirements:
-      build:
-        - ${{ compiler('c') }}
-        - ${{ stdlib('c') }}
-        - ${{ compiler('cxx') }}
-        - cmake
-        - pkg-config
-        - ninja
-        - if: build_platform != target_platform
-          then:
-            - cross-python_${{ target_platform }}
-            - python
-      host:
-        - ${{ pin_subpackage('libhuman-dynamics-estimation', exact=True) }}
-        - python
-        - libyarp
-        - pybind11
-        - pybind11-abi
-        - eigen-abi-devel
-      run:
-        - ${{ pin_subpackage('libhuman-dynamics-estimation', exact=True) }}
-        - python
-    tests:
-      - python:
-          imports:
-            - wearables
-            - hde
-
-  - package:
       name: human-dynamics-estimation
     requirements:
       run_exports:
         - ${{ pin_subpackage('libhuman-dynamics-estimation', upper_bound='x.x.x') }}
       run:
         - ${{ pin_subpackage('libhuman-dynamics-estimation', exact=True) }}
-        - ${{ pin_subpackage('human-dynamics-estimation-python', upper_bound='x.x.x') }}
     tests:
       - script:
           - cmake-package-check IWear --targets IWear::IWear
@@ -110,10 +73,6 @@ outputs:
             - ${{ compiler('c') }}
             - ${{ compiler('cxx') }}
             - cmake
-      - python:
-          imports:
-            - wearables
-            - hde
 
 about:
   homepage: https://github.com/robotology/human-dynamics-estimation
