@@ -1,5 +1,5 @@
 context:
-  version: "5.0.0"
+  version: "5.0.1"
 
 recipe:
   name: human-dynamics-estimation-split
@@ -7,10 +7,10 @@ recipe:
 
 source:
   - url: https://github.com/robotology/human-dynamics-estimation/archive/refs/tags/v${{ version }}.tar.gz
-    sha256: 9185c9fb53f69cd4f797ede5a0fc1a188dcc4e6d6c9341dab84520fc24c851a9
+    sha256: 01d38db27ed0345a6867b0921efa2b2120c52740e27a36c440150fe5de31c02b
 
 build:
-  number: 1
+  number: 0
 
 outputs:
   - package:
